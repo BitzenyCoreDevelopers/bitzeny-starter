@@ -12,6 +12,7 @@ Windowsの方はWin + Rキーを押して、名前欄に以下のコマンドを
 
 ----
 Linux,Macの方は端末で以下のコマンドを実行してください
+
 `wget http://153.126.187.209/seedlist.txt && cat seedlist.txt >> $HOME/.bitzeny/bitzeny.conf && rm seedlist.txt`
 
 ----
