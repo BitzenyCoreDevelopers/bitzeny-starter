@@ -8,7 +8,7 @@
 ----
 Windowsの方はWin + Rキーを押して、名前欄に以下のコマンドをコピー&ペーストしてください。（約1.3GBのファイルをダウンロードするので、時間がかかります。）
 
-`mkdir C:\temp & powershell -Command "Invoke-WebRequest -Uri http://153.126.187.209/seedlist.txt -OutFile C:\temp\seedlist.txt" && powershell -Command "Invoke-WebRequest -Uri http://153.126.187.209/bootstrap20171210.dat -OutFile C:\temp\bootstrap.bat" && type C:\temp\seedlist.txt >> %AppData%\bitzeny\bitzeny.conf && move C:\temp\bootstrap.dat %AppData%\bitzeny\bootstrap.dat`
+`mkdir C:\temp & powershell -Command "Invoke-WebRequest -Uri http://153.126.187.209/seedlist.txt -OutFile C:\temp\seedlist.txt" && powershell -Command "Invoke-WebRequest -Uri http://153.126.187.209/bootstrap20171210.dat -OutFile C:\temp\bootstrap.dat" && type C:\temp\seedlist.txt >> %AppData%\bitzeny\bitzeny.conf && move C:\temp\bootstrap.dat %AppData%\bitzeny\bootstrap.dat`
 
 ----
 Linux,Macの方は端末で以下のコマンドを実行してください
