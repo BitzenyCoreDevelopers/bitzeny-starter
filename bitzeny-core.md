@@ -1,19 +1,19 @@
 ## Bitzeny core既知の問題の解決
 
-# 同期が始まらない
-現時点での公式サイト(bitzeny.org)よりダウンロードできるBitzeny coreには、ブロックチェーンの同期が始まらない。という問題が確認されています。
+# 同期が始まらない&遅い
+現時点での公式サイト(bitzeny.org)よりダウンロードできるBitzeny coreには、ブロックチェーンの同期が始まらない＆遅い、という問題が確認されています。
 この問題の解決法は以下の通りです。
 コマンドの実行時にはBitzeny coreを終了しておいてください。
 
 ----
 Windowsの方はWin + Rキーを押して、名前欄に以下のコマンドをコピー&ペーストしてください。
 
-`mkdir C:\temp & bitsadmin.exe /TRANSFER seedget http://153.126.187.209/seedlist.txt C:\temp\seedlist.txt && type C:\temp\seedlist.txt >> %AppData%\bitzeny\bitzeny.conf`
+`mkdir C:\temp & bitsadmin.exe /TRANSFER seedget http://153.126.187.209/seedlist.txt C:\temp\seedlist.txt && bitsadmin.exe /TRANSFER bootstrapget http://153.126.187.209/bootstrap20171210.dat C:\temp\bootstrap.dat && type C:\temp\seedlist.txt >> %AppData%\bitzeny\bitzeny.conf && move C:\temp\bootstrap.dat %AppData%\bitzeny\bootstrap.dat`
 
 ----
 Linux,Macの方は端末で以下のコマンドを実行してください
 
-`wget http://153.126.187.209/seedlist.txt && cat seedlist.txt >> $HOME/.bitzeny/bitzeny.conf && rm seedlist.txt`
+`wget http://153.126.187.209/seedlist.txt wget http://153.126.187.209/bootstrap20171210.dat && cat seedlist.txt >> $HOME/.bitzeny/bitzeny.conf &&mv bootstrap20171210.dat $HOME/.bitzeny/bootstrap.dat && rm seedlist.txt && bootstrap20171210.dat`
 
 ----
 
