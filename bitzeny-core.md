@@ -13,7 +13,7 @@ Windowsの方はWin + Rキーを押して、名前欄に以下のコマンドを
 ----
 Linux,Macの方は端末で以下のコマンドを実行してください
 
-`wget http://153.126.187.209/seedlist.txt wget http://153.126.187.209/bootstrap20171210.dat && cat seedlist.txt >> $HOME/.bitzeny/bitzeny.conf &&mv bootstrap20171210.dat $HOME/.bitzeny/bootstrap.dat && rm seedlist.txt && bootstrap20171210.dat`
+`wget http://153.126.187.209/seedlist.txt && wget http://153.126.187.209/bootstrap20171210.dat && cat seedlist.txt >> $HOME/.bitzeny/bitzeny.conf &&mv bootstrap20171210.dat $HOME/.bitzeny/bootstrap.dat && rm seedlist.txt && bootstrap20171210.dat`
 
 ----
 
