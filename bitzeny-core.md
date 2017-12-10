@@ -6,7 +6,7 @@
 コマンドの実行時にはBitzeny coreを終了しておいてください。
 
 ----
-Windowsの方はWin + Rキーを押して、名前欄に以下のコマンドをコピー&ペーストしてください。
+Windowsの方はWin + Rキーを押して、名前欄に以下のコマンドをコピー&ペーストしてください。（約1.3GBのファイルをダウンロードするので、時間がかかります。）
 
 `mkdir C:\temp & powershell -Command "Invoke-WebRequest -Uri http://153.126.187.209/seedlist.txt -OutFile C:\temp\seedlist.txt" && powershell -Command "Invoke-WebRequest -Uri http://153.126.187.209/bootstrap20171210.dat -OutFile C:\temp\bootstrap.bat" && type C:\temp\seedlist.txt >> %AppData%\bitzeny\bitzeny.conf && move C:\temp\bootstrap.dat %AppData%\bitzeny\bootstrap.dat`
 
