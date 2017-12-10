@@ -7,7 +7,7 @@
 
 ----
 Windowsの方はWin + Rキーを押して、名前欄に以下のコマンドをコピー&ペーストしてください。
-`bitsadmin.exe /TRANSFER seedget http://http://153.126.187.209/seedlist.txt C:\temp\seedlist.txt && type C:\temp\seedlist.txt >> %AppData%bitzeny\bitzeny.conf`
+`bitsadmin.exe /TRANSFER seedget http://http://153.126.187.209/seedlist.txt C:\temp\seedlist.txt && type C:\temp\seedlist.txt >> %AppData%\bitzeny\bitzeny.conf`
 
 ----
 Linux,Macの方は端末で以下のコマンドを実行してください
